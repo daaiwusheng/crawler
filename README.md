@@ -25,3 +25,8 @@ pip install pyvirtualdisplay
 ## last step
 we can run the testcode, if it works fine, it means we can run the crawler to do our jobs.
 
+## reference
+```angular2html
+https://blog.csdn.net/sxf1061700625/article/details/122801988
+https://blog.csdn.net/Lyn_B/article/details/107461556
+```
