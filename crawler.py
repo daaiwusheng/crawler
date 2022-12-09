@@ -14,7 +14,7 @@ import sys
 url = "https://www.google.com"
 explorer = "Chrome"
 # directory
-imgs_dir = "/home/wangyu_kyland/dataset/crawler_images/"
+imgs_dir = "/home/wangyu_kyland_dell/dataset/crawled_images"
 
 
 # report hook with three parameters passed
@@ -113,7 +113,7 @@ class CrawlSelenium:
                 print(err)
 
         self.driver.quit()
-        self.display.stop()
+        # self.display.stop()
 
 
 def main():
@@ -124,8 +124,8 @@ def main():
     if not os.path.exists(imgs_dir):
         os.mkdir(imgs_dir)
     # crawling
-    crawl_s.crawl(keywords='construction crane block hook')
-
+    # crawl_s.crawl(keywords='construction crane block hook')
+    crawl_s.crawl(keywords='建筑垃圾', number_imgs=2000)
 
 if __name__ == "__main__":
     main()
