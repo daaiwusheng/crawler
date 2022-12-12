@@ -1,0 +1,8 @@
+# crawler requirements
+# Usage: pip install -r requirements.txt
+
+requests
+certifi
+pyOpenSSL
+cryptography
+selenium

@@ -11,10 +11,11 @@ import sys
 
 # default url
 # replace for yours
-url = "https://www.google.com"
+url_google = "https://www.google.com"
+url_baidu = "https://www.yahoo.com"
 explorer = "Chrome"
 # directory
-imgs_dir = "/home/wangyu_kyland_dell/dataset/crawled_images"
+imgs_dir = "/home/steven/dataset/crawled_images"
 
 
 # report hook with three parameters passed
@@ -118,14 +119,14 @@ class CrawlSelenium:
 
 def main():
     # setting
-    crawl_s = CrawlSelenium(explorer, url)
+    crawl_s = CrawlSelenium(explorer, url_baidu)
     crawl_s.set_loading_strategy("normal")
     # make directory
     if not os.path.exists(imgs_dir):
         os.mkdir(imgs_dir)
     # crawling
     # crawl_s.crawl(keywords='construction crane block hook')
-    crawl_s.crawl(keywords='建筑垃圾', number_imgs=2000)
+    crawl_s.crawl(keywords='建筑工地', number_imgs=2000)
 
 if __name__ == "__main__":
     main()
